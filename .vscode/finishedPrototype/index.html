@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <title>Dice: The Single Player Adventure</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="navLink" href="./index.html">Single Player</a>
+      <div class="diceGameLogo">
+        <h1>
+          <a href="./index.html" class="logoText navText"
+            ><img
+              class="diceLogo"
+              src="./img/DiceGAME.png"
+              alt="Logo"
+              width="55"
+              height="40"
+            />DICE</a
+          >
+        </h1>
+      </div>
+      <a class="navLink" href="./multiplayer.html">Multiplayer</a>
+    </div>
+
+    <div class="rulesCont">
+      <button id="rules" class="rules">THE RULES</button>
+    </div>
+
+    <!-- The RULES -->
+    <div id="myModal" class="modal">
+      <!-- Rules EXPLAINED -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>THE RULES</h1>
+        <li>Roll the dice to begin the game.</li>
+        <li>The dice appears on the first roll.</li>
+        <li>Each time the dice is rolled the score adds up.</li>
+        <li>If one players score passes 20, you win.</li>
+        <li>If you roll a 1 at any time, you lose.</li>
+        <li>When you're ready click the roll button.</li>
+      </div>
+    </div>
+
+    <div class="scoreCont">
+      <p class="score">SCORE: <span id="points">0</span></p>
+    </div>
+
+    <div class="msgCont">
+      <p id="msg"></p>
+    </div>
+
+    <div class="die">
+      <img id="dice" src="./img/DiceGAME.png" alt="diceObject" />
+    </div>
+
+    <div class="rollBtn">
+      <button id="btn">ROLL DICE</button>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  <script src="./modal.js"></script>
+</html>
