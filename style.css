@@ -1,7 +1,29 @@
 body {
-    background-color: rgb(160, 98, 143);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F9F5F6;
+    font-family: 'Kalam', cursive;
+    padding: 0;
+    margin: 0;
     
+}
+
+.headerBox {
+
+    background-color: #FDCEDF;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    /* shadow ring */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    
+}
+
+h1 {
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 25px;
 }
 
 .header {
@@ -28,6 +50,11 @@ body {
     flex-direction: column;
 }
 
+.diceImage {
+
+    width: 20px;
+}
+
 button {
 
     border: none;
@@ -44,43 +71,61 @@ button {
 
 }
 
-#diceImage {
-
-    max-width: 500px;
-    max-height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#dicePlayer1 {
-
-    display: flex;
-    flex-direction: column;
-}
-
-.p1Box {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #scoreTotal {
 
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #FDCEDF;
     text-align: center;
     font-size: 45px;
 }
 
 #reset {
 
-    background-color: #814E73;
+    background-color: #F8E8EE;
     color: white;
     font-size: 50px;
+    font-family: 'Kalam', cursive;;
     padding: 15px;
     margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    /* shadow ring */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
     
+}
+
+.footerContainer {
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    background-color: #FDCEDF;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    
+    /* Start of border shading */
+    
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    /* shadow ring */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows */
+    0 0.3px 0.4px hsla(0, 21%, 52%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.here {
+
+    text-decoration: none;
+    color: white;
 }

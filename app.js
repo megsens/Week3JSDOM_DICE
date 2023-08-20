@@ -20,7 +20,7 @@ roll.addEventListener('click', () =>{
             welcomeImage.src = './diceimages/lose.gif';
         } else {
             roundScore += dice1;
-            scoreTotal.innerHTML = 'Total Score'    + roundScore;
+            scoreTotal.innerHTML = 'Total Score: '    + roundScore;
             if (roundScore >= 20) {
                 // WIN
                 scoreTotal.innerHTML = 'You Won!';
@@ -37,6 +37,7 @@ reset.addEventListener('click', () => {
     roundScore = 0;
     scoreTotal.innerHTML = 'Total Score: 0';
     gameOver = false;
-    diceImage.src = './diceimages/reset.gif';
-    roll.disables = false;
+    // DISPLAY STRING
+    console.log("TRY AGAIN");
+;    roll.disables = false;
 })
